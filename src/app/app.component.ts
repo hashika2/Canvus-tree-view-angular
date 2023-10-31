@@ -240,7 +240,7 @@ export class AppComponent  {
       console.log(data, '^^^^')
        this.chart = new OrgChart()
         .container('.chart-container')
-        .data(D3_TREE)
+        .data(D3_TREE) // change the data what you need
         .linkUpdate(function (d: any, i, arr) {
           d3.select(this)
             .attr('stroke', (d: any) =>
