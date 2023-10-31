@@ -1,0 +1,14 @@
+<div class="org-node">
+    {{ data.name }}
+    <div *ngIf="data.children" class="org-children">
+      <div class="org-line"></div>
+      <app-tree-view2 *ngFor="let child of data.children" [data]="child"></app-tree-view2>
+    </div>
+  </div>
+  <div class="org-node">
+    <div class="org-line"></div>
+    {{ data.name }}
+  </div>
+  <div *ngIf="data.children" class="org-children">
+    <app-tree-view2 *ngFor="let child of data.children" [data]="child"></app-tree-view2>
+  </div>

@@ -1,0 +1,17 @@
+<!-- <hello name="{{ name }}"></hello> -->
+<p>
+  Start editing to see some magic happen :)
+</p>
+<button (click)="changeOrientation()" >Horizontal Orientatiaon </button>
+<button (click)="changeVerticalorientation()" >Vertical Orientation</button>
+<!-- <div echarts [options]="chartOption" class="demo-chart"></div> -->
+ <div  echarts [options]="options" [merge]="mergeData" style="height: 600px;"></div>
+
+ <!-- <div class="container">
+  <h1>Organizational Chart</h1>
+  <app-tree-view2 [data]="orgData"></app-tree-view2>
+</div> -->
+
+<app-d3-org-chart [data]="data" [chart1]="chart"></app-d3-org-chart>
+ 
+ 
